@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #2e2c2c;
+}
+.header__lista{
+    list-style: none;
+    padding: 0px 16px;
+    background-color: rgb(204, 204, 204);
+}
+.header__items{
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(8, 6, 0);
+    text-align: center;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230, 235, 240);
+    justify-content: center;
+}
+
+
+
+h1 {
+    color: rgb(255, 8, 0);
+    font-size: 45px;
+    text-align: center;
+} 
+
+h2{
+    color: rgb(173, 87, 87);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+img {
+    width: 490px;
+    height: 300px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 20px #e3f0e3;
+}
+
+/* main {
+    display: block;
+    flex-direction: row; vuelve el contenido en columna y row en horizontal 
+    
+    
+} */
+
+.imagen__index{
+
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+
+
+.parrafo{
+    color: #d1d1d1;
+    font-size: auto;
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+}
+
+.galeria--titulo{
+    text-align: center;
+    font-size: 54px;
+    color: rgb(10, 148, 17);
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+/* .body-fondo{
+    background-image: url(../resource/pearljamwall.jpg);
+    background-size: cover;
+    justify-content: center;
+    
+} */
+
+.mapa{
+    margin-top: 100px;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding: 40px;
+}
+
+
+.discos{
+    width: 450px;
+    height: 400px;
+    display: inline;
+    border-top: 10px;
+    border-bottom: 15px;
+    align-items: center;
+    list-style: georgian;
+}
+
+.tour__lista{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+    margin-bottom: 300px;
+    list-style: none;
+    display: block;
+}
+.redes{
+    width: 200px;
+    height: 90px;
+}
+
+.contacto__texto{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 30;
+}
+.contacto__items{
+    margin-bottom: 150px;
+}
+
+footer {
+    background-color: rgb(43, 61, 226);
+    background-color: #4e44ac;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
