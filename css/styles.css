@@ -7,18 +7,25 @@ header{
 }
 .header__lista{
     list-style: none;
-    padding: 0px 16px;
+    padding: 10px 16px;
     background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
 .header__items{
-    display: inline;
+    border: 10px, solid #2e2c2c; 
     padding: 10px;
-    text-decoration: none;
-}
+    margin: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    border-style: groove;
+} 
+
 body{
     background-color: rgb(8, 6, 0);
     text-align: center;
-    display: inline;
     font-family: 'Roboto', sans-serif;
     color: rgb(230, 235, 240);
     justify-content: center;
@@ -47,12 +54,13 @@ img {
     border: 20px #e3f0e3;
 }
 
-/* main {
-    display: block;
-    flex-direction: row; vuelve el contenido en columna y row en horizontal 
-    
-    
-} */
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
 
 .imagen__index{
 
@@ -65,8 +73,8 @@ img {
 .parrafo{
     color: #d1d1d1;
     font-size: auto;
-    margin: 0 auto;
-    width: 800px;
+    margin: 10px;
+    width: auto;
     height: auto;
 }
 
@@ -75,8 +83,7 @@ img {
     font-size: 54px;
     color: rgb(10, 148, 17);
     letter-spacing: 1px;
-    margin-bottom: 2px;
-}
+    margin-bottom: 2px;}
 
 /* .body-fondo{
     background-image: url(../resource/pearljamwall.jpg);
@@ -86,23 +93,37 @@ img {
 } */
 
 .mapa{
-    margin-top: 100px;
-    margin: auto;
+    margin: 0 auto;
     width: 800px;
-    height: 500px;
-    padding: 40px;
-}
+    height: 500px;}
 
 
-.discos{
-    width: 450px;
-    height: 400px;
-    display: inline;
+.discografia{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
     border-top: 10px;
     border-bottom: 15px;
-    align-items: center;
-    list-style: georgian;
+    
+    justify-content: stretch;
 }
+.discos{
+    border: 4px, rgb(15, 175, 9);
+    
+}
+.c1{
+    grid-area: 1/span 4;
+}
+.c2{
+    grid-area: 2/1; 
+}
+.c3{
+    grid-area: 2/3;
+}
+.c4{
+    grid-area: 2/4;
+}
+
 
 .tour__lista{
     text-align: center;
