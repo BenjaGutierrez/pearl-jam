@@ -40,7 +40,8 @@ body {
 h1 {
   color: #ff0800;
   font-size: 45px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 h2 {
   color: #ad5757;
@@ -101,10 +102,9 @@ h2 {
   list-style: none;
   justify-content: center; }
 
-/* .discos{
-    border: 4px, rgb(15, 175, 9);
-    
-} */
+.discos {
+  border: 4px, #0faf09; }
+
 .c1 {
   grid-area: 1/span 4; }
 
@@ -141,14 +141,17 @@ button:hover {
   flex-wrap: wrap; }
 
 .redes {
-  width: 200px;
-  height: 90px;
+  width: 80px;
+  height: 70px;
   margin-top: 50px; }
 
+.redes:hover {
+  transform: translate(2px, 3px); }
+
 .contacto__texto {
-  /*     display: flex;
-    flex-direction: column;
-    justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 30px;
   padding: 50px;
   margin-bottom: 30; }
@@ -184,11 +187,26 @@ footer {
   .c4 {
     grid-area: 2/4; } }
 
-/* tablet 
+/* tablet */
+@media (min-width: 320px) and (max-width: 575px) {
+  .discografia {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    border-top: 10px;
+    border-bottom: 15px;
+    justify-content: stretch; }
+  .discos {
+    border: 4px, #0faf09; }
+  .c1 {
+    grid-area: 1/span 4; }
+  .c2 {
+    grid-area: 2/1; }
+  .c3 {
+    grid-area: 2/3; }
+  .c4 {
+    grid-area: 2/4; } }
 
-@media (min-width: 320px ) and (max-width: 575px) {
-    
-} */
 .keyframe {
   animation-name: loop;
   animation-iteration-count: infinite;
