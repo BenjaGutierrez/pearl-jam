@@ -1,0 +1,35 @@
+/* header */
+
+.header{
+    background-color: #2e2c2c;
+background-image: linear-gradient(to bottom, black, rgb(65, 62, 62),#201f1f);
+    &__lista{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: linear-gradient(to top, black, rgb(204, 204, 204),#2e2c2c);
+    }
+    
+        &__items{
+        border: 10px, solid #2e2c2c; 
+        padding: 10px;
+        margin: 2px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: italic;
+        border-style: groove;
+        border-radius: 15px;
+        background-color: #d4d6da;
+        &__items:hover {
+            background-color: #6e6d6d;
+        }
+        &__items:visited {
+            color: #cb14db;
+        } 
+    } 
+    &__icono {
+        width: 80px;
+        height: 70px;
+    }
+}
+

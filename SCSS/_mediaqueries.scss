@@ -1,0 +1,55 @@
+/* media */
+@media (min-width: 576px) and (max-width: 926px) {
+    .discografia{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        border-top: 10px;
+        border-bottom: 15px;
+        justify-content: stretch}
+    
+    .discos{
+        border: 4px, rgb(15, 175, 9);
+    }
+    .c1{
+        grid-area: 1/span 4;
+    }
+    .c2{
+        grid-area: 2/1; 
+    }
+    .c3{
+        grid-area: 2/3;
+    }
+    .c4{
+        grid-area: 2/4;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 320px ) and (max-width: 575px) {
+    .discografia{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        border-top: 10px;
+        border-bottom: 15px;
+        justify-content: stretch}
+    
+    .discos{
+        border: 4px, rgb(15, 175, 9);
+    }
+    .c1{
+        grid-area: 1/span 4;
+    }
+    .c2{
+        grid-area: 2/1; 
+    }
+    .c3{
+        grid-area: 2/3;
+    }
+    .c4{
+        grid-area: 2/4;
+    }
+} 

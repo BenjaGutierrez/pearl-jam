@@ -1,40 +1,21 @@
+@import "variables";
+@import "header";
+@import "contacto";
+@import "operators";
+@import "mediaqueries";
+
 *{
     margin: 0px;
     padding: 0px;
 }
-header{
-    background-color: #2e2c2c;
-    background-image: linear-gradient(to bottom, black, rgb(65, 62, 62),#201f1f);
-}
-.header__lista{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: linear-gradient(to top, black, rgb(204, 204, 204),#2e2c2c);
-}
 
-.header__items{
-    border: 10px, solid #2e2c2c; 
-    padding: 10px;
-    margin: 2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    border-style: groove;
-    border-radius: 15px;
-    background-color: #d4d6da;
-} 
-.header__items:hover {
-    background-color: #6e6d6d;
-}
 
-.icono {
-    width: 80px;
-    height: 70px;
-}
+
+
+/* body */
 
 body{
-    background-color: rgb(8, 6, 0);
+    background-color: $color-principal;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(230, 235, 240);
@@ -44,7 +25,7 @@ body{
 
 
 h1 {
-    color: rgb(255, 8, 0);
+    color: $font-titulo;
     font-size: 45px;
     text-align: center;
     text-transform: uppercase;
@@ -52,50 +33,50 @@ h1 {
 
 
 h2{
-    color: rgb(173, 87, 87);
+    color: $font-subtitulo;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
 
+
+
+/* Index */
+.main
+    &--flex-container {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        
+        &--imagen__index{
+            border: #d1d1d1 solid;
+            margin: 0 auto;
+            width: 800px;
+            height: 500px;
+            }
+            
+        &--parrafo{
+            color: #d1d1d1;
+            font-size: auto;
+            margin: 10px;
+            width: auto;
+            height: auto;
+            }
+    &--mapa{
+        margin: 0 auto;
+        width: 800px;
+        height: 500px;}
+        }
+
+
+/* galeria */
 .imagenes {
     width: 650px;
     height: 400px;
     margin-top: 5px;
     border: 20px #e3f0e3;
-}
-
-
-.flex-container {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.imagen__index{
-    border: #d1d1d1 solid;
-    margin: 0 auto;
-    width: 800px;
-    height: 500px;
-}
-
-
-.parrafo{
-    color: #d1d1d1;
-    font-size: auto;
-    margin: 10px;
-    width: auto;
-    height: auto;
-}
-
-.galeria--titulo{
-    text-align: center;
-    font-size: 54px;
-    color: rgb(10, 148, 17);
-    letter-spacing: 1px;
-    margin-bottom: 2px;
 }
 
 
@@ -107,12 +88,9 @@ h2{
     
 } */
 
-.mapa{
-    margin: 0 auto;
-    width: 800px;
-    height: 500px;}
 
 
+/* discografia */
 .discografia{
     display: grid;
     grid-template-rows: auto auto;
@@ -121,26 +99,26 @@ h2{
     border-bottom: 10px;
     list-style: none;
     justify-content: center;
+    .discos{
+        border: 4px, rgb(15, 175, 9);
+        
+    } 
+    .c1{
+        grid-area: 1/span 4;
+    }
+    .c2{
+        grid-area: 2/1; 
+    }
+    .c3{
+        grid-area: 2/3;
+    }
+    .c4{
+        grid-area: 2/4;
+    }
 }
-.discos{
-    border: 4px, rgb(15, 175, 9);
-    
-} 
-.c1{
-    grid-area: 1/span 4;
-}
-.c2{
-    grid-area: 2/1; 
-}
-.c3{
-    grid-area: 2/3;
-}
-.c4{
-    grid-area: 2/4;
-}
-
+/* tour */
 button {
-    border: rgb(0, 0, 0) solid 2px;
+    border: $color-principal 2px;
     border-radius: 15px;
     color: #d1d1d1;
     background-color: #5db0d3;
@@ -148,111 +126,58 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: linear-gradient(#5db0d3, #0c2763);
     font-size: 20px;
-    
+    &:hover {
+        background-image: linear-gradient( #0c2763, #5db0d3);
+        transform: translate(2px, 3px);
+    }
 }
 
-button:hover {
-    background-image: linear-gradient( #0c2763, #5db0d3);
-    transform: translate(2px, 3px);
-
+.tour {
+    &__lista{
+        font-size: 27px;
+        padding: 40px;
+        margin-bottom: 50px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
 }
 
-.tour__lista{
-    font-size: 27px;
-    padding: 40px;
-    margin-bottom: 50px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+/* contacto */
+.contacto{
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        padding: 50px;
+        margin-bottom: 30;}
+    &__items{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
+
 }
+/* footer */
 .redes{
     width: 80px;
     height: 70px;
     margin-top: 50px;
-}
-.redes:hover {
-    transform: translate(2px, 3px)
-}
-
-
-.contacto__texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 30px;
-    padding: 50px;
-    margin-bottom: 30;
-}
-.contacto__items{
-    margin-bottom: 150px;
-/*     display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    &:hover {
+        transform: translate(2px, 3px)
+    }
 }
 
-
-footer {
+.footer {
+    & {
     background-color: rgb(43, 61, 226);
-    background-image: linear-gradient(to top, black, rgb(43, 61, 226));
+    background-image: linear-gradient(to top,$color-principal, rgb(43, 61, 226));
     margin-top: 100px;
     margin-bottom: 10px;
 }
-
-@media (min-width: 576px) and (max-width: 926px) {
-    .discografia{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        border-top: 10px;
-        border-bottom: 15px;
-        justify-content: stretch}
-    
-    .discos{
-        border: 4px, rgb(15, 175, 9);
-    }
-    .c1{
-        grid-area: 1/span 4;
-    }
-    .c2{
-        grid-area: 2/1; 
-    }
-    .c3{
-        grid-area: 2/3;
-    }
-    .c4{
-        grid-area: 2/4;
-    }
 }
-
-
-/* tablet */
-
-@media (min-width: 320px ) and (max-width: 575px) {
-    .discografia{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        border-top: 10px;
-        border-bottom: 15px;
-        justify-content: stretch}
-    
-    .discos{
-        border: 4px, rgb(15, 175, 9);
-    }
-    .c1{
-        grid-area: 1/span 4;
-    }
-    .c2{
-        grid-area: 2/1; 
-    }
-    .c3{
-        grid-area: 2/3;
-    }
-    .c4{
-        grid-area: 2/4;
-    }
-} 
 
 .keyframe {
     animation-name: loop;
@@ -264,12 +189,12 @@ footer {
 
 @keyframes loop {
     0% {
-        background-color: #000000;
+        background-color: $color-principal;
     }
     50% {
         background-color: #d1d3da;
     }
     100% {
-        background-color: #000000;
+        background-color: $color-principal;
     }
 }
