@@ -16,65 +16,68 @@
 
 body{
     background-color: $color-principal;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(230, 235, 240);
     justify-content: center;
+    font-size: $contenido;
+    @extend .text-centrado;
 }
 
 
 
 h1 {
-    color: $font-titulo;
-    font-size: 45px;
-    text-align: center;
+    color: $color-titulo ;
+    font-size: $titulos;
     text-transform: uppercase;
+    @extend .text-centrado;
 } 
 
 
 h2{
-    color: $font-subtitulo;
+    color: $color-subtitulo;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
+    font-size: $subtitulos;
+    @extend .text-centrado;
 }
 
 
 
 /* Index */
-.main
-    &--flex-container {
+.main {
+    &--flex_container {
         display: flex;
-        flex-direction: row; 
         flex-wrap: nowrap;
-        justify-content: center;
         width: 100%;
+        @include flex (row, center, center);
+    }
+
         
         &--imagen__index{
             border: #d1d1d1 solid;
             margin: 0 auto;
-            width: 800px;
-            height: 500px;
+            width: 50rem;
+            height: 31rem;
             }
             
         &--parrafo{
             color: #d1d1d1;
-            font-size: auto;
+            font-size: $contenido;
             margin: 10px;
             width: auto;
             height: auto;
             }
+            
     &--mapa{
-        margin: 0 auto;
-        width: 800px;
-        height: 500px;}
-        }
-
+        margin: auto;
+        width: 50rem;
+        height: 30rem;}
+    }
 
 /* galeria */
 .imagenes {
-    width: 650px;
-    height: 400px;
+    width: 40rem;
+    height: 25rem;
     margin-top: 5px;
     border: 20px #e3f0e3;
 }
@@ -91,6 +94,7 @@ h2{
 
 
 /* discografia */
+
 .discografia{
     display: grid;
     grid-template-rows: auto auto;
@@ -101,7 +105,6 @@ h2{
     justify-content: center;
     .discos{
         border: 4px, rgb(15, 175, 9);
-        
     } 
     .c1{
         grid-area: 1/span 4;
@@ -115,6 +118,11 @@ h2{
     .c4{
         grid-area: 2/4;
     }
+}
+.discos__lista {
+    list-style: none;    display: flex;
+    flex-wrap: wrap;
+    @include flex (column, center, center);
 }
 /* tour */
 button {
@@ -134,36 +142,20 @@ button {
 
 .tour {
     &__lista{
-        font-size: 27px;
+        font-size: 2rem;
         padding: 40px;
         margin-bottom: 50px;
         list-style: none;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        @include flex (column, center, center)
 }
 }
 
-/* contacto */
-.contacto{
-    &__texto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 30px;
-        padding: 50px;
-        margin-bottom: 30;}
-    &__items{
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;}
-
-}
 /* footer */
 .redes{
-    width: 80px;
-    height: 70px;
+    width: 5rem;
+    height: 4rem;
     margin-top: 50px;
     &:hover {
         transform: translate(2px, 3px)

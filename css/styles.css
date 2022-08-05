@@ -1,7 +1,7 @@
-* {
-  margin: 0px;
-  padding: 0px; }
-
+@charset "UTF-8";
+/* colores */
+/* color de letras */
+/* tamaño de letras */
 /* header */
 .header {
   background-color: #2e2c2c;
@@ -23,108 +23,11 @@
     background-color: #d4d6da; }
     .header__items__items:hover {
       background-color: #6e6d6d; }
+    .header__items__items:visited {
+      color: #cb14db; }
   .header__icono {
     width: 80px;
     height: 70px; }
-
-/* body */
-body {
-  background-color: #080600;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #e6ebf0;
-  justify-content: center; }
-
-h1 {
-  color: #ff0800;
-  font-size: 45px;
-  text-align: center;
-  text-transform: uppercase; }
-
-h2 {
-  color: #ad5757;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center; }
-
-/* Index */
-.main--flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 100%; }
-  .main--flex-container .main--imagen__index {
-    border: #d1d1d1 solid;
-    margin: 0 auto;
-    width: 800px;
-    height: 500px; }
-  .main--flex-container .main--parrafo {
-    color: #d1d1d1;
-    font-size: auto;
-    margin: 10px;
-    width: auto;
-    height: auto; }
-  .main--flex-container .main--mapa {
-    margin: 0 auto;
-    width: 800px;
-    height: 500px; }
-
-/* galeria */
-.imagenes {
-  width: 650px;
-  height: 400px;
-  margin-top: 5px;
-  border: 20px #e3f0e3; }
-
-/* .body-fondo{
-    background-image: url(../resource/pearljamwall.jpg);
-    background-size: cover;
-    justify-content: center;
-    
-} */
-/* discografia */
-.discografia {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  border-top: 5px;
-  border-bottom: 10px;
-  list-style: none;
-  justify-content: center; }
-  .discografia .discos {
-    border: 4px, #0faf09; }
-  .discografia .c1 {
-    grid-area: 1/span 4; }
-  .discografia .c2 {
-    grid-area: 2/1; }
-  .discografia .c3 {
-    grid-area: 2/3; }
-  .discografia .c4 {
-    grid-area: 2/4; }
-
-/* tour */
-button {
-  border: black solid 2px;
-  border-radius: 15px;
-  color: #d1d1d1;
-  background-color: #5db0d3;
-  padding: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: linear-gradient(#5db0d3, #0c2763);
-  font-size: 20px; }
-  button:hover {
-    background-image: linear-gradient(#0c2763, #5db0d3);
-    transform: translate(2px, 3px); }
-
-.tour__lista {
-  font-size: 27px;
-  padding: 40px;
-  margin-bottom: 50px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
 
 /* contacto */
 .contacto__texto {
@@ -141,20 +44,31 @@ button {
   flex-direction: column;
   justify-content: center; }
 
-/* footer */
-.redes {
-  width: 80px;
-  height: 70px;
-  margin-top: 50px; }
-  .redes:hover {
-    transform: translate(2px, 3px); }
+/* condicional IF */
+/* codigo en caso de que cumpla la condicion */
+/* MAP - coleccion de variables (clave valor) */
+/* each - cada uno */
+.coLor-facebook {
+  background-color: blue; }
 
-footer {
-  background-color: #2b3de2;
-  background-image: linear-gradient(to top, black, #2b3de2);
-  margin-top: 100px;
-  margin-bottom: 10px; }
+.coLor-twitter {
+  background-color: lightblue; }
 
+.coLor-instagram {
+  background-color: #da66da; }
+
+.tamaño-h1 {
+  font-size: 3rem;
+  color: red; }
+
+.tamaño-h2 {
+  font-size: 2rem; }
+
+/* extend */
+.text-centrado, body, h1, h2 {
+  text-align: center; }
+
+/* mixin - permite crear clases base modificables */
 /* media */
 @media (min-width: 576px) and (max-width: 926px) {
   .discografia {
@@ -194,6 +108,136 @@ footer {
     grid-area: 2/3; }
   .c4 {
     grid-area: 2/4; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* body */
+body {
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  color: #e6ebf0;
+  justify-content: center;
+  font-size: 1rem; }
+
+h1 {
+  color: #ff0000;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+h2 {
+  color: #cc8383;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem; }
+
+/* Index */
+.main--flex_container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.main--imagen__index {
+  border: #d1d1d1 solid;
+  margin: 0 auto;
+  width: 50rem;
+  height: 31rem; }
+
+.main--parrafo {
+  color: #d1d1d1;
+  font-size: 1rem;
+  margin: 10px;
+  width: auto;
+  height: auto; }
+
+.main--mapa {
+  margin: auto;
+  width: 50rem;
+  height: 30rem; }
+
+/* galeria */
+.imagenes {
+  width: 40rem;
+  height: 25rem;
+  margin-top: 5px;
+  border: 20px #e3f0e3; }
+
+/* .body-fondo{
+    background-image: url(../resource/pearljamwall.jpg);
+    background-size: cover;
+    justify-content: center;
+    
+} */
+/* discografia */
+.discografia {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  border-top: 5px;
+  border-bottom: 10px;
+  list-style: none;
+  justify-content: center; }
+  .discografia .discos {
+    border: 4px, #0faf09; }
+  .discografia .c1 {
+    grid-area: 1/span 4; }
+  .discografia .c2 {
+    grid-area: 2/1; }
+  .discografia .c3 {
+    grid-area: 2/3; }
+  .discografia .c4 {
+    grid-area: 2/4; }
+
+.discos__lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* tour */
+button {
+  border: #000000 2px;
+  border-radius: 15px;
+  color: #d1d1d1;
+  background-color: #5db0d3;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(#5db0d3, #0c2763);
+  font-size: 20px; }
+  button:hover {
+    background-image: linear-gradient(#0c2763, #5db0d3);
+    transform: translate(2px, 3px); }
+
+.tour__lista {
+  font-size: 2rem;
+  padding: 40px;
+  margin-bottom: 50px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* footer */
+.redes {
+  width: 5rem;
+  height: 4rem;
+  margin-top: 50px; }
+  .redes:hover {
+    transform: translate(2px, 3px); }
+
+.footer {
+  background-color: #2b3de2;
+  background-image: linear-gradient(to top, #000000, #2b3de2);
+  margin-top: 100px;
+  margin-bottom: 10px; }
 
 .keyframe {
   animation-name: loop;

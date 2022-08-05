@@ -1,0 +1,51 @@
+/* condicional IF */
+
+@if (condicion a cumplir) {
+    /* codigo en caso de que cumpla la condicion */
+}
+@else {
+    /* en caso de no cumplir la condicion */
+}
+
+/* MAP - coleccion de variables (clave valor) */
+
+$redes: (
+    facebook: blue,
+    twitter: lightblue,
+    instagram: #da66da
+);
+
+/* each - cada uno */
+@each $name, $coLor in $redes {
+    .coLor-#{$name} {
+        background-color: #{$coLor};
+    }
+}
+
+$tituLos: (
+    h1: 3rem,
+    h2: 2rem
+);
+
+@each $title, $size in $tituLos {
+    .tamaño-#{$title} {
+        font-size: #{$size};
+        @if ($size > 2rem) {
+            color: red;
+        }
+    }
+}
+
+/* extend */
+
+.text-centrado {
+    text-align: center;
+}
+
+/* mixin - permite crear clases base modificables */
+
+@mixin flex ($fLex-direction, $justify, $align) {
+    flex-direction: $fLex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}

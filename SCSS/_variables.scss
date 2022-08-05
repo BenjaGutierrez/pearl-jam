@@ -1,7 +1,12 @@
 /* colores */
-$color-principal: 8, 6, 0;
+$color-principal: #000000 ;
 
 
-/* letras */
-$font-titulo:  255, 8, 0;
-$font-subtitulo: 173, 87, 87;
+/* color de letras */
+$color-titulo:  #ff0000  ;
+$color-subtitulo:  #cc8383;
+
+/* tamaño de letras */
+$contenido: 1rem;
+$subtitulos: $contenido * 2;
+$titulos: $contenido * 3;
