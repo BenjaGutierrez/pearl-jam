@@ -226,18 +226,22 @@ button {
   align-items: center; }
 
 /* footer */
-.redes {
-  width: 5rem;
-  height: 4rem;
-  margin-top: 50px; }
-  .redes:hover {
-    transform: translate(2px, 3px); }
-
 .footer {
-  background-color: #2b3de2;
-  background-image: linear-gradient(to top, #000000, #2b3de2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #5f6594;
+  background-image: linear-gradient(to top, black, #413e3e, #201f1f);
   margin-top: 100px;
   margin-bottom: 10px; }
+  .footer__redes {
+    width: 3rem;
+    height: 2rem;
+    margin-top: 0px;
+    margin-left: 700%; }
+    .footer__redes:hover {
+      transform: translate(2px, 3px); }
 
 .keyframe {
   animation-name: loop;
