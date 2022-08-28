@@ -20,13 +20,21 @@ background-image: linear-gradient(to bottom, black, #413e3e,#201f1f);
         border-style: groove;
         border-radius: 15px;
         background-color: #d4d6da;
-        &__items:hover {
-            background-color: #6e6d6d;
-        }
-        &__items:visited {
-            color: #cb14db;
-        } 
     } 
+    .header__items:hover{
+        background-color: #3f4144;
+    }
+    
+    &__tags {
+        outline: none;
+        text-decoration: none;
+        color: #ca2020;
+    } 
+    .header__tags:hover{
+        color: #f9faf9;
+        
+    }
+    
     &__icono {
         width: 80px;
         height: 70px;

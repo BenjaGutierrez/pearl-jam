@@ -25,6 +25,7 @@ $redes: (
 $tituLos: (
     h1: 3rem,
     h2: 2rem
+    
 );
 
 @each $title, $size in $tituLos {
@@ -40,6 +41,7 @@ $tituLos: (
 
 .text-centrado {
     text-align: center;
+
 }
 
 /* mixin - permite crear clases base modificables */

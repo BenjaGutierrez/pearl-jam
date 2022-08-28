@@ -30,6 +30,7 @@ h1 {
     font-size: $titulos;
     text-transform: uppercase;
     @extend .text-centrado;
+    
 } 
 
 
@@ -43,89 +44,51 @@ h2{
 
 
 
-/* Index */
-.main {
-    &--flex_container {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        @include flex (row, center, center);
-    }
 
+/* Index */
+
+    .main--imagen__index{
         
-        &--imagen__index{
-            border: #d1d1d1 solid;
-            margin: 0 auto;
-            width: 50rem;
-            height: 31rem;
-            }
-            
-        &--parrafo{
-            color: #d1d1d1;
-            font-size: $contenido;
-            margin: 10px;
-            width: auto;
-            height: auto;
-            }
-            
-    &--mapa{
-        margin: auto;
-        width: 50rem;
-        height: 30rem;}
-    }
+        width: 100%;
+        height: auto;
+        }
 
 /* galeria */
 .imagenes {
-    width: 40rem;
+    width: 34rem;
     height: 25rem;
     margin-top: 5px;
-    border: 20px #e3f0e3;
 }
-
-
-
-/* .body-fondo{
-    background-image: url(../resource/pearljamwall.jpg);
-    background-size: cover;
-    justify-content: center;
-    
-} */
-
 
 
 /* discografia */
+.otrosdiscos {
+    outline: none;
+    text-decoration: none;
+    color: #df7676;
+    &:hover{
+        color: #f9faf9;
+        
+    }
+} 
 
-.discografia{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    border-top: 5px;
-    border-bottom: 10px;
-    list-style: none;
-    justify-content: center;
-    .discos{
-        border: 4px, rgb(15, 175, 9);
-    } 
-    .c1{
-        grid-area: 1/span 4;
-    }
-    .c2{
-        grid-area: 2/1; 
-    }
-    .c3{
-        grid-area: 2/3;
-    }
-    .c4{
-        grid-area: 2/4;
-    }
+
+.col-sm-3{
+    margin-top: 10px;
+    padding: 0;
 }
+
 .discos__lista {
-    list-style: none;    display: flex;
+    list-style: none;  
+    display: flex;
     flex-wrap: wrap;
     @include flex (column, center, center);
-}
+} 
+
+
+
 /* tour */
-button {
+.button__tour {
     border: $color-principal 2px;
     border-radius: 15px;
     color: #d1d1d1;
@@ -139,6 +102,7 @@ button {
         transform: translate(2px, 3px);
     }
 }
+
 
 .tour {
     &__lista{
@@ -154,28 +118,28 @@ button {
 
 /* footer */
 
+.redes{
+    color: #cacaca;
+    width: 3rem;
+    height: 2rem;
+    text-decoration:none ;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.redes:hover {
+    transform: translate(2px, 3px)
+}
+
 
 .footer {
     & {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    margin-top: 50px;
+    text-align: center;
     background-color: rgb(95, 101, 148);
     background-image: linear-gradient(to top, black, #413e3e,#201f1f);
-    margin-top: 100px;
-    margin-bottom: 10px;
-    &__redes{
-        width: 3rem;
-        height: 2rem;
-        margin-top: 0px;
-        margin-left: 700%;
-        &:hover {
-            transform: translate(2px, 3px)
-        }
     }
 }
-}
+
 
 .keyframe {
     animation-name: loop;
@@ -195,4 +159,4 @@ button {
     100% {
         background-color: $color-principal;
     }
-}
+} 

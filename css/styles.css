@@ -21,15 +21,19 @@
     border-style: groove;
     border-radius: 15px;
     background-color: #d4d6da; }
-    .header__items__items:hover {
-      background-color: #6e6d6d; }
-    .header__items__items:visited {
-      color: #cb14db; }
+  .header .header__items:hover {
+    background-color: #3f4144; }
+  .header__tags {
+    outline: none;
+    text-decoration: none;
+    color: #ca2020; }
+  .header .header__tags:hover {
+    color: #f9faf9; }
   .header__icono {
     width: 80px;
     height: 70px; }
 
-/* contacto */
+/* contacto*/
 .contacto__texto {
   display: flex;
   flex-direction: column;
@@ -43,6 +47,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.contacto .contacto__btn {
+  text-align: center;
+  background-color: transparent;
+  border: solid 1px #ee1212;
+  color: antiquewhite;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.contacto .contacto__btn:hover {
+  background-color: #e2563e; }
 
 /* condicional IF */
 /* codigo en caso de que cumpla la condicion */
@@ -133,64 +149,27 @@ h2 {
   font-size: 2rem; }
 
 /* Index */
-.main--flex_container {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
 .main--imagen__index {
-  border: #d1d1d1 solid;
-  margin: 0 auto;
-  width: 50rem;
-  height: 31rem; }
-
-.main--parrafo {
-  color: #d1d1d1;
-  font-size: 1rem;
-  margin: 10px;
-  width: auto;
+  width: 100%;
   height: auto; }
-
-.main--mapa {
-  margin: auto;
-  width: 50rem;
-  height: 30rem; }
 
 /* galeria */
 .imagenes {
-  width: 40rem;
+  width: 34rem;
   height: 25rem;
-  margin-top: 5px;
-  border: 20px #e3f0e3; }
+  margin-top: 5px; }
 
-/* .body-fondo{
-    background-image: url(../resource/pearljamwall.jpg);
-    background-size: cover;
-    justify-content: center;
-    
-} */
 /* discografia */
-.discografia {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  border-top: 5px;
-  border-bottom: 10px;
-  list-style: none;
-  justify-content: center; }
-  .discografia .discos {
-    border: 4px, #0faf09; }
-  .discografia .c1 {
-    grid-area: 1/span 4; }
-  .discografia .c2 {
-    grid-area: 2/1; }
-  .discografia .c3 {
-    grid-area: 2/3; }
-  .discografia .c4 {
-    grid-area: 2/4; }
+.otrosdiscos {
+  outline: none;
+  text-decoration: none;
+  color: #df7676; }
+  .otrosdiscos:hover {
+    color: #f9faf9; }
+
+.col-sm-3 {
+  margin-top: 10px;
+  padding: 0; }
 
 .discos__lista {
   list-style: none;
@@ -201,7 +180,7 @@ h2 {
   align-items: center; }
 
 /* tour */
-button {
+.button__tour {
   border: #000000 2px;
   border-radius: 15px;
   color: #d1d1d1;
@@ -210,7 +189,7 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: linear-gradient(#5db0d3, #0c2763);
   font-size: 20px; }
-  button:hover {
+  .button__tour:hover {
     background-image: linear-gradient(#0c2763, #5db0d3);
     transform: translate(2px, 3px); }
 
@@ -226,22 +205,22 @@ button {
   align-items: center; }
 
 /* footer */
+.redes {
+  color: #cacaca;
+  width: 3rem;
+  height: 2rem;
+  text-decoration: none;
+  overflow: hidden;
+  margin-top: 20px; }
+
+.redes:hover {
+  transform: translate(2px, 3px); }
+
 .footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
+  margin-top: 50px;
+  text-align: center;
   background-color: #5f6594;
-  background-image: linear-gradient(to top, black, #413e3e, #201f1f);
-  margin-top: 100px;
-  margin-bottom: 10px; }
-  .footer__redes {
-    width: 3rem;
-    height: 2rem;
-    margin-top: 0px;
-    margin-left: 700%; }
-    .footer__redes:hover {
-      transform: translate(2px, 3px); }
+  background-image: linear-gradient(to top, black, #413e3e, #201f1f); }
 
 .keyframe {
   animation-name: loop;
