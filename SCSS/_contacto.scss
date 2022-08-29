@@ -12,18 +12,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;}
-    .contacto__btn{
+    &__btn{
         text-align: center;
         background-color: transparent;
-        border: solid 1px rgb(238, 18, 18);
+        border: solid 1px rgb(148, 146, 146);
         color: antiquewhite;
         margin-left: 3rem;
         margin-right: 3rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+            &:hover{
+                background-color:#ca2020;
+                
+        }
     }
-    .contacto__btn:hover{
-        background-color: rgb(226, 86, 62);
-    }
+    
 
 
 } 

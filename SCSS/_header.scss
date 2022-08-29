@@ -20,20 +20,21 @@ background-image: linear-gradient(to bottom, black, #413e3e,#201f1f);
         border-style: groove;
         border-radius: 15px;
         background-color: #d4d6da;
+            &:hover{
+                background-color: #3f4144;
+        }
     } 
-    .header__items:hover{
-        background-color: #3f4144;
-    }
+    
     
     &__tags {
         outline: none;
         text-decoration: none;
         color: #ca2020;
+        &:hover{
+            color: #f9faf9;
+        }
     } 
-    .header__tags:hover{
-        color: #f9faf9;
-        
-    }
+
     
     &__icono {
         width: 80px;
